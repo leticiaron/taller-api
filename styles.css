@@ -1,0 +1,71 @@
+/* Fondo de la página */
+body {
+  background-image: url(fondo.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/*Encabezado de la página*/
+h1 {
+  color: #ffffff;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 2rem;
+}
+/* Estilo de las tarjetas */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1rem;
+  animation: slideIn 0.5s ease-out;
+  border-radius: 1rem;
+  background-color: #ffffffd3;
+}
+
+.card-img-top {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-body {
+  height: 18rem;
+}
+
+/* Animación al hacer hover en las tarjetas */
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.863);
+  background-color: #ffffffe1;
+}
+
+/* Estilo de títulos */
+.card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+  padding-bottom: 0.7rem;
+}
+
+/* Información del personaje */
+.character-info p {
+  margin: 0.5rem 0;
+  color: black;
+}
+
+span {
+  font-weight: 700;
+}
+
+/* Animación de deslizamiento desde abajo */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
